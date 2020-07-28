@@ -6,7 +6,7 @@ var app = express();
 
 var path = require('path');
 
-var PORT = process.env.HTTP_PORT || 3000;
+var PORT = process.env.HTTP_PORT || 5000;
 app.use(express["static"](path.join(__dirname, 'client', 'build')));
 app.get('/', function (req, res) {
   res.send('flowers smell nice');
